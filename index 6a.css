@@ -1,0 +1,239 @@
+body {
+    background-color: black;
+    
+}
+
+.title,
+.text {
+    color: white;
+}
+
+#container {
+    height: 100%;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.orderBtn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.orderBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.title {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: top right bottom left */
+    /* padding: topbottom leftright */
+    margin: 12px;
+}
+
+.previewLink {
+    color: #A9482A;
+}
+
+.previewLink:hover {
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form>label {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.input-phone {
+    width: 200px;
+    background-color: transparent;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px;
+}
+
+.input-phone:focus {
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.input-phone::placeholder {
+    color: white;
+}
+
+#email {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 20px solid rgb(243, 34, 34);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        transition: all 0.5s ease;
+}
+
+.email:hover {
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+align-items: center;
+    display: flex;
+    position: sticky;
+    background-color: rgb(71, 90, 255);
+}
+
+
+
+
+
+#santorini-greece{
+background-image: url("./santorini-greece.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+transition: 0.3s ease-in-out;
+backdrop-filter: blur(5px);
+}
+
+
+
+#Chitral-Valley{
+    background-image: url("./Chitral-Valley.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+
+
+    
+#Deosai-min{
+    background-image: url("./Deosai-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+
+
+    
+#Fairy-meadows{
+    background-image: url("./Fairy-meadows.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+
+
+    
+#hallstatt-austria{
+    background-image: url("./hallstatt-austria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+
+    
+#pak-faisal{
+    background-image: url("./pak-faisal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+
+
+    
+#us{
+    background-image: url("./us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    }
+
+
+    #hallstatt-village{
+        background-image: url("./hallstatt-village.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        transition: 0.3s ease-in-out;
+        backdrop-filter: blur(5px);
+        }
+    
+
+.previewLink{font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: blink 1s ease-in-out infinite;
+    background-color: aliceblue;
+}

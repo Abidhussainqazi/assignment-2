@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>World Population by Continent</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("world-map.jpg");
+            background-repeat: no-repeat;
+            background-size: 1550px 750px;
+            height: 100vh;
+            transition: 0.3s ease-in-out;
+            backdrop-filter: blur(1px);
+        }
+
+
+        #infographic {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .continent {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .continent:hover {
+            transform: scale(1.1);
+        }
+
+        .tooltip {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+
+        .continent:hover .tooltip {
+            top: -80px;
+            opacity: 1;
+        }
+
+        /* Define styles for each continent */
+        #asia {
+            background-image: url(./asia.jpg);
+        }
+
+        #africa {
+            background-image: url(Africa.jpg);
+        }
+
+        #north-america {
+            background-image: url(north-america-state-map.jpg);
+        }
+
+        #south-america {
+            background-image: url(south-america.jpg);
+        }
+
+        #europe {
+            background-image: url(eurpoe.jpg);
+        }
+
+        #oceania {
+            background-image: url(oceania.jpg);
+        }
+
+        h1 {
+            color: antiquewhite;
+            font-weight: 800;
+        }
+
+        #piechart {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['population', 'million'],
+                ['asia', 4600],
+                ['africa', 1300],
+                ['north america', 579],
+                ['south america', 422],
+                ['oceania', 41],
+                ['europe', 746]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body class="back">
+    <h1 align="center">World Population by Continent</h1>
+    <div id="infographic">
+        <div class="continent" id="asia">
+            <div class="tooltip">Asia<br>4.6 billion</div>
+        </div>
+        <div class="continent" id="africa">
+            <div class="tooltip">Africa<br>1.3 billion</div>
+        </div>
+        <div class="continent" id="north-america">
+            <div class="tooltip">North America<br>579 million</div>
+        </div>
+        <div class="continent" id="south-america">
+            <div class="tooltip">South America<br>422 million</div>
+        </div>
+        <div class="continent" id="europe">
+
+            <div class="tooltip">Europe<br>746 million</div>
+        </div><br>
+        <div class="continent" id="oceania">
+            <div class="tooltip">Oceania<br>41 million</div>
+        </div>
+    </div>
+    <div id="piechart" style="width: 500px; height: 300px;" align="center"></div>
+</body>
+
+</html>
